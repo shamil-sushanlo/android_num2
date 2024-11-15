@@ -1,0 +1,45 @@
+<!-- res/layout/activity_add_task.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Поле для ввода названия задачи -->
+    <EditText
+        android:id="@+id/et_task_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите название задачи"
+        android:padding="12dp"
+        android:background="@drawable/edittext_border"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Поле для ввода описания задачи -->
+    <EditText
+        android:id="@+id/et_task_description"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Введите описание задачи"
+        android:padding="12dp"
+        android:background="@drawable/edittext_border"
+        android:textSize="16sp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Кнопка "Сохранить" -->
+    <Button
+        android:id="@+id/btn_save_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:textSize="16sp" />
+</LinearLayout>
